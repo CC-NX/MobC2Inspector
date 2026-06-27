@@ -124,9 +124,8 @@ python mcp_server.py --test
 
 ---
 
-## 演示流程（答辩路径）
 
-### 快速演示（无需真实设备）
+### 快速演示
 
 所有功能均支持 `demo_mode=True`，无需连接Android设备即可演示完整流程。
 
@@ -708,34 +707,6 @@ APK → 提取libnative.so → Unidbg模拟执行 → JNI环境补全
 
 ---
 
-## 课程设计答辩要点
-
-### 突出亮点
-
-1. **全链路覆盖**：从静态SO密钥提取到动态网络Hook，再到ML模型评估，覆盖C2检测完整流程
-2. **隐蔽对抗**：针对反分析恶意样本的8种对抗手段，保证检测数据真实性
-3. **量化评估**：5折交叉验证输出准确率、召回率、F1、AUC、误报率
-4. **MCP协议集成**：可作为LLM Agent的工具，实现自动化分析编排
-5. **演示友好**：无真实设备也可展示完整功能
-
-### 答辩演示顺序
-
-1. 项目背景与问题定义（HITCON 2026）
-2. 系统架构展示（Frida + Unidbg + ML + MCP + PCAP）
-3. `python mcp_server.py --test` 快速演示7个工具（含analyze_pcap）
-4. `python train_model.py` 展示量化评估指标
-5. 查看Android分析报告 (`reports/report_sample_001_*.md`)
-6. PCAP跨平台分析演示：
-   ```bash
-   python mcp_server.py --tool analyze_pcap --params '{"pcap_path": "malware_trojan.pcap", "label": 1}'
-   python mcp_server.py --tool generate_report --params '{"target_id": "malware_trojan.pcap"}'
-   ```
-7. 展示生成的PCAP流量分析报告
-8. 隐蔽对抗模块设计思路
-9. 总结与展望（跨平台C2检测统一模型）
-
----
-
 ## 参考资源
 
 - [Frida官方文档](https://frida.re/docs/)
@@ -750,4 +721,4 @@ APK → 提取libnative.so → Unidbg模拟执行 → JNI环境补全
 
 [MIT License](LICENSE)
 
-**MobC2Inspector Team © 2026**
+**CC Team © 2026**
