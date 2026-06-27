@@ -717,8 +717,4 @@ APK → 提取libnative.so → Unidbg模拟执行 → JNI环境补全
 
 ---
 
-## 许可证
-
-[MIT License](LICENSE)
-
 **CC Team © 2026**
