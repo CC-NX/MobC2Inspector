@@ -1,0 +1,732 @@
+2026-06-26 16:58:50,744 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 16:58:50,744 [INFO] 执行工具: analyze_pcap | params={"pcap_path": "samples/trojan_c2.pcap"}
+2026-06-26 16:58:50,744 [INFO] 开始PCAP分析 | path=samples/trojan_c2.pcap | label=None
+2026-06-26 16:58:50,744 [INFO] 开始PCAP分析 | path=samples/trojan_c2.pcap
+2026-06-26 16:58:53,734 [INFO] pyshark解析完成 | 总包数: 0
+2026-06-26 16:58:54,475 [INFO] PCAP分析完成 | 预测=malicious | 置信度=0.5300
+2026-06-26 17:07:35,477 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 17:07:35,477 [INFO] 执行工具: analyze_pcap | params={"pcap_path": "samples/FTP.pcap"}
+2026-06-26 17:07:35,477 [INFO] 开始PCAP分析 | path=samples/FTP.pcap | label=None
+2026-06-26 17:07:35,477 [INFO] 开始PCAP分析 | path=samples/FTP.pcap
+2026-06-26 17:07:35,753 [INFO] pyshark解析完成 | 总包数: 0
+2026-06-26 17:07:36,542 [INFO] PCAP分析完成 | 预测=malicious | 置信度=0.5300
+2026-06-26 17:10:12,664 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 17:10:12,664 [INFO] 执行工具: analyze_pcap | params={"pcap_path": "samples/SMTP.pcap"}
+2026-06-26 17:10:12,664 [INFO] 开始PCAP分析 | path=samples/SMTP.pcap | label=None
+2026-06-26 17:10:12,664 [INFO] 开始PCAP分析 | path=samples/SMTP.pcap
+2026-06-26 17:10:13,187 [INFO] pyshark解析完成 | 总包数: 0
+2026-06-26 17:10:13,977 [INFO] PCAP分析完成 | 预测=malicious | 置信度=0.5300
+2026-06-26 17:10:31,541 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 17:10:31,541 [INFO] 执行工具: analyze_pcap | params={"pcap_path": "samples/exploit.pcap"}
+2026-06-26 17:10:31,541 [INFO] 开始PCAP分析 | path=samples/exploit.pcap | label=None
+2026-06-26 17:10:31,541 [INFO] 开始PCAP分析 | path=samples/exploit.pcap
+2026-06-26 17:11:38,554 [INFO] pyshark解析完成 | 总包数: 0
+2026-06-26 17:11:39,338 [INFO] PCAP分析完成 | 预测=malicious | 置信度=0.5300
+2026-06-26 17:18:34,668 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 17:18:34,668 [INFO] 执行工具: analyze_pcap | params={"pcap_path": "samples/FTP.pcap"}
+2026-06-26 17:18:34,668 [INFO] 开始PCAP分析 | path=samples/FTP.pcap | label=None
+2026-06-26 17:18:34,668 [INFO] 开始PCAP分析 | path=samples/FTP.pcap
+2026-06-26 17:18:34,877 [INFO] pyshark解析完成 | 总包数: 59
+2026-06-26 17:18:35,616 [INFO] PCAP分析完成 | 预测=benign | 置信度=0.6200
+2026-06-26 17:19:10,962 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 17:19:10,962 [INFO] 执行工具: list_samples | params={}
+2026-06-26 17:19:10,962 [INFO] 列出 3 个样本
+2026-06-26 17:19:10,962 [INFO] 执行工具: static_analysis | params={"apk_id": "sample_001"}
+2026-06-26 17:19:10,962 [INFO] 开始静态分析 | apk_id=sample_001
+2026-06-26 17:19:11,210 [ERROR] Unidbg执行失败: [!] 错误: SO文件不存在: D:\code\VScode\Py\MobC2Inspector\lib\armeabi-v7a\libnative.so
+
+2026-06-26 17:19:11,210 [INFO] 使用模拟数据演示静态分析 | apk_id=sample_001
+2026-06-26 17:19:11,210 [INFO] 执行工具: dynamic_analysis | params={"apk_id": "sample_001", "bypass_evasion": true}
+2026-06-26 17:19:11,210 [INFO] 开始动态分析 | apk_id=sample_001 | bypass_evasion=True | timeout=120s
+2026-06-26 17:19:11,211 [INFO] 执行工具: traffic_capture | params={"apk_id": "sample_001", "duration_sec": 10}
+2026-06-26 17:19:11,211 [INFO] 开始流量捕获 | apk_id=sample_001 | duration=10s | tcpdump=True
+2026-06-26 17:19:11,211 [INFO] 执行工具: analyze_pcap | params={"pcap_path": "sample_windows_trojan.pcap", "label": 1}
+2026-06-26 17:19:11,211 [INFO] 开始PCAP分析 | path=sample_windows_trojan.pcap | label=1
+2026-06-26 17:19:11,212 [ERROR] PCAP文件不存在: sample_windows_trojan.pcap
+2026-06-26 17:19:11,212 [INFO] 执行工具: evaluate_detection | params={}
+2026-06-26 17:19:11,212 [INFO] 开始检测评估...
+2026-06-26 17:19:11,215 [INFO] 读取特征数据: 120 条记录
+2026-06-26 17:19:12,009 [INFO] 加载已有模型（dict格式）
+2026-06-26 17:19:13,325 [INFO] 特征重要性图已保存: D:\code\VScode\Py\MobC2Inspector\data\feature_importance.png
+2026-06-26 17:19:13,328 [INFO] 评估完成: ACC=1.0000, PRE=1.0000, REC=1.0000, F1=1.0000, AUC=1.0000, FPR=0.0000
+2026-06-26 17:19:13,328 [INFO] 执行工具: generate_report | params={"target_id": "sample_001"}
+2026-06-26 17:19:13,328 [INFO] 生成分析报告 | target_id=sample_001
+2026-06-26 17:19:13,328 [INFO] 开始静态分析 | apk_id=sample_001
+2026-06-26 17:19:13,572 [ERROR] Unidbg执行失败: [!] 错误: SO文件不存在: D:\code\VScode\Py\MobC2Inspector\lib\armeabi-v7a\libnative.so
+
+2026-06-26 17:19:13,572 [INFO] 使用模拟数据演示静态分析 | apk_id=sample_001
+2026-06-26 17:19:13,572 [INFO] 开始动态分析 | apk_id=sample_001 | bypass_evasion=True | timeout=120s
+2026-06-26 17:19:13,572 [INFO] 开始流量捕获 | apk_id=sample_001 | duration=60s | tcpdump=True
+2026-06-26 17:19:13,573 [INFO] 开始检测评估...
+2026-06-26 17:19:13,574 [INFO] 读取特征数据: 120 条记录
+2026-06-26 17:19:13,586 [INFO] 加载已有模型（dict格式）
+2026-06-26 17:19:14,677 [INFO] 特征重要性图已保存: D:\code\VScode\Py\MobC2Inspector\data\feature_importance.png
+2026-06-26 17:19:14,680 [INFO] 评估完成: ACC=1.0000, PRE=1.0000, REC=1.0000, F1=1.0000, AUC=1.0000, FPR=0.0000
+2026-06-26 17:19:14,680 [INFO] APK报告已保存: D:\code\VScode\Py\MobC2Inspector\reports\report_sample_001_20260626_171914.md
+2026-06-26 17:19:14,681 [INFO] 执行工具: generate_report | params={"target_id": "sample_windows_trojan.pcap"}
+2026-06-26 17:19:14,681 [INFO] 生成分析报告 | target_id=sample_windows_trojan.pcap
+2026-06-26 17:19:14,681 [INFO] 开始PCAP分析 | path=sample_windows_trojan.pcap | label=None
+2026-06-26 17:19:14,681 [ERROR] PCAP文件不存在: sample_windows_trojan.pcap
+2026-06-26 17:19:14,681 [INFO] 开始检测评估...
+2026-06-26 17:19:14,683 [INFO] 读取特征数据: 120 条记录
+2026-06-26 17:19:14,695 [INFO] 加载已有模型（dict格式）
+2026-06-26 17:19:15,756 [INFO] 特征重要性图已保存: D:\code\VScode\Py\MobC2Inspector\data\feature_importance.png
+2026-06-26 17:19:15,758 [INFO] 评估完成: ACC=1.0000, PRE=1.0000, REC=1.0000, F1=1.0000, AUC=1.0000, FPR=0.0000
+2026-06-26 17:19:15,758 [INFO] PCAP报告已保存: D:\code\VScode\Py\MobC2Inspector\reports\report_pcap_sample_windows_trojan_20260626_171915.md
+2026-06-26 17:19:28,403 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 17:19:28,403 [INFO] 执行工具: analyze_pcap | params={"pcap_path": "samples/trojan_c2.pcap"}
+2026-06-26 17:19:28,403 [INFO] 开始PCAP分析 | path=samples/trojan_c2.pcap | label=None
+2026-06-26 17:19:28,403 [INFO] 开始PCAP分析 | path=samples/trojan_c2.pcap
+2026-06-26 17:19:38,400 [INFO] pyshark解析完成 | 总包数: 5491
+2026-06-26 17:19:39,159 [INFO] PCAP分析完成 | 预测=benign | 置信度=0.6200
+2026-06-26 17:21:19,388 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 17:21:19,388 [INFO] 执行工具: analyze_pcap | params={"pcap_path": "samples/trojan_c2.pcap"}
+2026-06-26 17:21:19,388 [INFO] 开始PCAP分析 | path=samples/trojan_c2.pcap | label=None
+2026-06-26 17:21:19,388 [INFO] 开始PCAP分析 | path=samples/trojan_c2.pcap
+2026-06-26 17:21:35,522 [INFO] pyshark解析完成 | 总包数: 5491
+2026-06-26 17:21:37,593 [INFO] PCAP分析完成 | 预测=benign | 置信度=0.6200
+2026-06-26 18:00:47,478 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 18:00:47,478 [INFO] 执行工具: analyze_pcap | params={"pcap_path": "samples/trojan_c2.pcap"}
+2026-06-26 18:00:47,478 [INFO] 开始PCAP分析 | path=samples/trojan_c2.pcap | label=None
+2026-06-26 18:00:47,478 [INFO] 开始PCAP分析 | path=samples/trojan_c2.pcap
+2026-06-26 18:00:47,995 [INFO] pyshark解析完成 | 总包数: 241
+2026-06-26 18:00:48,770 [INFO] PCAP分析完成 | 预测=malicious | 置信度=0.5200
+2026-06-26 18:12:28,431 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 18:12:28,432 [INFO] 执行工具: list_samples | params={}
+2026-06-26 18:12:28,432 [INFO] 列出 3 个样本
+2026-06-26 18:16:04,740 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 18:16:04,740 [INFO] 执行工具: list_samples | params={}
+2026-06-26 18:16:04,740 [INFO] 列出 3 个样本
+2026-06-26 18:16:30,201 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 18:16:30,201 [INFO] 执行工具: static_analysis | params={"apk_id": "sample_base.so"}
+2026-06-26 18:16:30,201 [INFO] 开始静态分析 | apk_id=sample_base.so
+2026-06-26 18:26:25,893 [INFO] PCAP分析引擎: pyshark
+2026-06-26 18:26:25,895 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 18:26:25,895 [INFO] 扫描 samples/ 目录，发现 5 个文件
+2026-06-26 18:26:25,895 [INFO] 列出 8 个样本
+2026-06-26 18:26:30,772 [INFO] PCAP分析引擎: pyshark
+2026-06-26 18:26:30,773 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 18:26:30,773 [INFO] 开始静态分析 | apk_id=base
+2026-06-26 18:26:30,784 [INFO] 从 APK 提取 SO: lib/armeabi-v7a/libandroidx.graphics.path.so -> samples\extracted_base\lib\armeabi-v7a\libandroidx.graphics.path.so
+2026-06-26 18:26:30,784 [INFO] 使用模拟数据演示静态分析 | apk_id=base
+2026-06-26 18:26:30,784 [INFO] 开始静态分析 | apk_id=sample_001
+2026-06-26 18:26:30,785 [INFO] 使用模拟数据演示静态分析 | apk_id=sample_001
+2026-06-26 18:26:30,785 [INFO] 开始静态分析 | apk_id=nonexistent
+2026-06-26 18:27:35,631 [INFO] PCAP分析引擎: pyshark
+2026-06-26 18:27:35,632 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 18:27:35,632 [INFO] 执行工具: list_samples | params={}
+2026-06-26 18:27:35,633 [INFO] 扫描 samples/ 目录，发现 5 个文件
+2026-06-26 18:27:35,633 [INFO] 列出 8 个样本
+2026-06-26 18:27:39,615 [INFO] PCAP分析引擎: pyshark
+2026-06-26 18:27:39,617 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 18:27:43,703 [INFO] PCAP分析引擎: pyshark
+2026-06-26 18:27:47,514 [INFO] PCAP分析引擎: pyshark
+2026-06-26 18:27:47,515 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 18:27:47,515 [INFO] 执行工具: static_analysis | params={"apk_id": "base"}
+2026-06-26 18:27:47,515 [INFO] 开始静态分析 | apk_id=base
+2026-06-26 18:27:47,524 [INFO] 从 APK 提取 SO: lib/armeabi-v7a/libandroidx.graphics.path.so -> samples\extracted_base\lib\armeabi-v7a\libandroidx.graphics.path.so
+2026-06-26 18:27:47,524 [INFO] 使用模拟数据演示静态分析 | apk_id=base
+2026-06-26 18:27:52,090 [INFO] PCAP分析引擎: pyshark
+2026-06-26 18:27:52,091 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 18:27:52,092 [INFO] 执行工具: static_analysis | params={"apk_id": "does_not_exist"}
+2026-06-26 18:27:52,092 [INFO] 开始静态分析 | apk_id=does_not_exist
+2026-06-26 18:30:00,173 [WARNING] pcap_analyzer模块未找到，PCAP分析功能不可用
+2026-06-26 18:30:00,174 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 18:30:00,174 [INFO] 扫描 samples/ 目录，发现 5 个文件
+2026-06-26 18:30:00,174 [INFO] 列出 8 个样本
+2026-06-26 18:30:00,174 [INFO] 开始静态分析 | apk_id=sample_001
+2026-06-26 18:30:00,175 [INFO] 使用模拟数据演示静态分析 | apk_id=sample_001
+2026-06-26 18:30:00,175 [INFO] 开始动态分析 | apk_id=sample_001 | bypass_evasion=True | timeout=120s
+2026-06-26 18:30:00,175 [INFO] 开始检测评估...
+2026-06-26 18:30:00,177 [INFO] 读取特征数据: 120 条记录
+2026-06-26 18:30:01,048 [INFO] 加载已有模型（dict格式）
+2026-06-26 18:30:02,459 [INFO] 特征重要性图已保存: D:\code\VScode\Py\MobC2Inspector\data\feature_importance.png
+2026-06-26 18:30:02,462 [INFO] 评估完成: ACC=1.0000, PRE=1.0000, REC=1.0000, F1=1.0000, AUC=1.0000, FPR=0.0000
+2026-06-26 18:30:02,462 [INFO] 生成分析报告 | target_id=sample_001
+2026-06-26 18:30:02,463 [INFO] 开始静态分析 | apk_id=sample_001
+2026-06-26 18:30:02,463 [INFO] 使用模拟数据演示静态分析 | apk_id=sample_001
+2026-06-26 18:30:02,463 [INFO] 开始动态分析 | apk_id=sample_001 | bypass_evasion=True | timeout=120s
+2026-06-26 18:30:02,463 [INFO] 开始流量捕获 | apk_id=sample_001 | duration=60s | tcpdump=True
+2026-06-26 18:30:02,463 [INFO] 开始检测评估...
+2026-06-26 18:30:02,465 [INFO] 读取特征数据: 120 条记录
+2026-06-26 18:30:02,475 [INFO] 加载已有模型（dict格式）
+2026-06-26 18:30:03,616 [INFO] 特征重要性图已保存: D:\code\VScode\Py\MobC2Inspector\data\feature_importance.png
+2026-06-26 18:30:03,620 [INFO] 评估完成: ACC=1.0000, PRE=1.0000, REC=1.0000, F1=1.0000, AUC=1.0000, FPR=0.0000
+2026-06-26 18:30:03,621 [INFO] APK报告已保存: D:\code\VScode\Py\MobC2Inspector\reports\report_sample_001_20260626_183003.md
+2026-06-26 18:35:04,423 [WARNING] pcap_analyzer模块未找到，PCAP分析功能不可用
+2026-06-26 18:35:04,423 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 18:35:04,423 [INFO] 扫描 samples/ 目录，发现 5 个文件
+2026-06-26 18:35:04,438 [INFO] 从 APK 提取 5 个 SO，主目标: lib/arm64-v8a/libandroidx.graphics.path.so
+2026-06-26 18:35:04,438 [INFO] 列出 8 个样本
+2026-06-26 18:35:04,438 [INFO] 开始静态分析 | apk_id=sample_001
+2026-06-26 18:35:04,443 [INFO] 使用模拟数据演示静态分析 | apk_id=sample_001
+2026-06-26 18:35:04,443 [INFO] 开始动态分析 | apk_id=sample_001 | bypass_evasion=True | timeout=120s
+2026-06-26 18:35:04,443 [INFO] 开始检测评估...
+2026-06-26 18:35:04,445 [INFO] 读取特征数据: 120 条记录
+2026-06-26 18:35:05,344 [INFO] 加载已有模型（dict格式）
+2026-06-26 18:35:06,762 [INFO] 特征重要性图已保存: D:\code\VScode\Py\MobC2Inspector\data\feature_importance.png
+2026-06-26 18:35:06,762 [INFO] 评估完成: ACC=1.0000, PRE=1.0000, REC=1.0000, F1=1.0000, AUC=1.0000, FPR=0.0000
+2026-06-26 18:35:06,762 [INFO] 生成分析报告 | target_id=sample_001
+2026-06-26 18:35:06,762 [INFO] 开始静态分析 | apk_id=sample_001
+2026-06-26 18:35:06,762 [INFO] 使用模拟数据演示静态分析 | apk_id=sample_001
+2026-06-26 18:35:06,762 [INFO] 开始动态分析 | apk_id=sample_001 | bypass_evasion=True | timeout=120s
+2026-06-26 18:35:06,762 [INFO] 开始流量捕获 | apk_id=sample_001 | duration=60s | tcpdump=True
+2026-06-26 18:35:06,762 [INFO] 开始检测评估...
+2026-06-26 18:35:06,771 [INFO] 读取特征数据: 120 条记录
+2026-06-26 18:35:06,784 [INFO] 加载已有模型（dict格式）
+2026-06-26 18:35:07,946 [INFO] 特征重要性图已保存: D:\code\VScode\Py\MobC2Inspector\data\feature_importance.png
+2026-06-26 18:35:07,948 [INFO] 评估完成: ACC=1.0000, PRE=1.0000, REC=1.0000, F1=1.0000, AUC=1.0000, FPR=0.0000
+2026-06-26 18:35:07,948 [INFO] APK报告已保存: D:\code\VScode\Py\MobC2Inspector\reports\report_sample_001_20260626_183507.md
+2026-06-26 18:35:18,137 [INFO] PCAP分析引擎: pyshark
+2026-06-26 18:35:18,138 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 18:35:18,138 [INFO] 开始静态分析 | apk_id=base
+2026-06-26 18:35:18,148 [INFO] 从 APK 提取 5 个 SO，主目标: lib/arm64-v8a/libandroidx.graphics.path.so
+2026-06-26 18:35:18,428 [ERROR] Unidbg执行失败: Exception in thread "main" java.lang.NoClassDefFoundError: com/sun/jna/Pointer
+	at com.github.unidbg.linux.android.AndroidEmulatorBuilder.build(AndroidEmulatorBuilder.java:22)
+	at com.github.unidbg.linux.android.AndroidEmulatorBuilder.build(AndroidEmulatorBuilder.java:6)
+	at unidbg_loader.init(unidbg_loader.java:119)
+	at unidbg_loader.main(unidbg_loader.java:351)
+Caused by: java.lang.ClassNotFoundException: com.sun.jna.Pointer
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 4 more
+
+2026-06-26 18:35:18,428 [INFO] 使用模拟数据演示静态分析 | apk_id=base
+2026-06-26 18:35:25,971 [INFO] PCAP分析引擎: pyshark
+2026-06-26 18:35:25,973 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 18:35:25,973 [INFO] 生成分析报告 | target_id=base
+2026-06-26 18:35:25,973 [INFO] 开始静态分析 | apk_id=base
+2026-06-26 18:35:25,983 [INFO] 从 APK 提取 5 个 SO，主目标: lib/arm64-v8a/libandroidx.graphics.path.so
+2026-06-26 18:35:26,261 [ERROR] Unidbg执行失败: Exception in thread "main" java.lang.NoClassDefFoundError: com/sun/jna/Pointer
+	at com.github.unidbg.linux.android.AndroidEmulatorBuilder.build(AndroidEmulatorBuilder.java:22)
+	at com.github.unidbg.linux.android.AndroidEmulatorBuilder.build(AndroidEmulatorBuilder.java:6)
+	at unidbg_loader.init(unidbg_loader.java:119)
+	at unidbg_loader.main(unidbg_loader.java:351)
+Caused by: java.lang.ClassNotFoundException: com.sun.jna.Pointer
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 4 more
+
+2026-06-26 18:35:26,261 [INFO] 使用模拟数据演示静态分析 | apk_id=base
+2026-06-26 18:35:26,261 [INFO] 开始动态分析 | apk_id=base | bypass_evasion=True | timeout=120s
+2026-06-26 18:35:26,261 [INFO] 开始流量捕获 | apk_id=base | duration=60s | tcpdump=True
+2026-06-26 18:35:26,262 [INFO] 开始检测评估...
+2026-06-26 18:35:26,264 [INFO] 读取特征数据: 120 条记录
+2026-06-26 18:35:27,171 [INFO] 加载已有模型（dict格式）
+2026-06-26 18:35:28,627 [INFO] 特征重要性图已保存: D:\code\VScode\Py\MobC2Inspector\data\feature_importance.png
+2026-06-26 18:35:28,627 [INFO] 评估完成: ACC=1.0000, PRE=1.0000, REC=1.0000, F1=1.0000, AUC=1.0000, FPR=0.0000
+2026-06-26 18:35:28,627 [INFO] APK报告已保存: D:\code\VScode\Py\MobC2Inspector\reports\report_base_20260626_183528.md
+2026-06-26 18:35:34,727 [INFO] PCAP分析引擎: pyshark
+2026-06-26 18:35:34,727 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 18:35:34,727 [INFO] 执行工具: list_samples | params={}
+2026-06-26 18:35:34,727 [INFO] 扫描 samples/ 目录，发现 5 个文件
+2026-06-26 18:35:34,743 [INFO] 从 APK 提取 5 个 SO，主目标: lib/arm64-v8a/libandroidx.graphics.path.so
+2026-06-26 18:35:34,743 [INFO] 列出 8 个样本
+2026-06-26 18:35:39,127 [INFO] PCAP分析引擎: pyshark
+2026-06-26 18:35:39,127 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 18:35:39,127 [INFO] 执行工具: static_analysis | params={"apk_id": "base"}
+2026-06-26 18:35:39,127 [INFO] 开始静态分析 | apk_id=base
+2026-06-26 18:35:39,136 [INFO] 从 APK 提取 5 个 SO，主目标: lib/arm64-v8a/libandroidx.graphics.path.so
+2026-06-26 18:35:39,410 [ERROR] Unidbg执行失败: Exception in thread "main" java.lang.NoClassDefFoundError: com/sun/jna/Pointer
+	at com.github.unidbg.linux.android.AndroidEmulatorBuilder.build(AndroidEmulatorBuilder.java:22)
+	at com.github.unidbg.linux.android.AndroidEmulatorBuilder.build(AndroidEmulatorBuilder.java:6)
+	at unidbg_loader.init(unidbg_loader.java:119)
+	at unidbg_loader.main(unidbg_loader.java:351)
+Caused by: java.lang.ClassNotFoundException: com.sun.jna.Pointer
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 4 more
+
+2026-06-26 18:35:39,410 [INFO] 使用模拟数据演示静态分析 | apk_id=base
+2026-06-26 19:49:11,979 [INFO] PCAP分析引擎: pyshark
+2026-06-26 19:49:11,979 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 19:49:11,979 [INFO] 开始静态分析 | apk_id=base
+2026-06-26 19:49:11,994 [INFO] 从 APK 提取 5 个 SO，主目标: lib/arm64-v8a/libandroidx.graphics.path.so
+2026-06-26 19:49:12,511 [ERROR] Unidbg执行失败: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Exception in thread "main" java.lang.NoClassDefFoundError: org/slf4j/impl/StaticLoggerBinder
+	at org.slf4j.LoggerFactory.getSingleton(LoggerFactory.java:189)
+	at org.slf4j.LoggerFactory.bind(LoggerFactory.java:112)
+	at org.slf4j.LoggerFactory.performInitialization(LoggerFactory.java:105)
+	at org.slf4j.LoggerFactory.getILoggerFactory(LoggerFactory.java:235)
+	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:208)
+	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:221)
+	at com.github.unidbg.AbstractEmulator.<clinit>(AbstractEmulator.java:61)
+	at com.github.unidbg.linux.android.AndroidEmulatorBuilder.build(AndroidEmulatorBuilder.java:22)
+	at com.github.unidbg.linux.android.AndroidEmulatorBuilder.build(AndroidEmulatorBuilder.java:6)
+	at unidbg_loader.init(unidbg_loader.java:119)
+	at unidbg_loader.main(unidbg_loader.java:351)
+Caused by: java.lang.ClassNotFoundException: org.slf4j.impl.StaticLoggerBinder
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 11 more
+
+2026-06-26 19:49:12,511 [INFO] 使用模拟数据演示静态分析 | apk_id=base
+2026-06-26 19:49:28,743 [INFO] PCAP分析引擎: pyshark
+2026-06-26 19:49:28,744 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 19:49:28,744 [INFO] 开始静态分析 | apk_id=base
+2026-06-26 19:49:28,755 [INFO] 从 APK 提取 5 个 SO，主目标: lib/arm64-v8a/libandroidx.graphics.path.so
+2026-06-26 19:49:29,214 [ERROR] Unidbg执行失败: Exception in thread "main" java.lang.NoClassDefFoundError: org/scijava/nativelib/NativeLoader
+	at unicorn.Unicorn.<clinit>(Unicorn.java:159)
+	at com.github.unidbg.arm.backend.UnicornBackend.<init>(UnicornBackend.java:27)
+	at com.github.unidbg.arm.backend.BackendFactory.createBackend(BackendFactory.java:38)
+	at com.github.unidbg.AbstractEmulator.<init>(AbstractEmulator.java:98)
+	at com.github.unidbg.arm.AbstractARM64Emulator.<init>(AbstractARM64Emulator.java:59)
+	at com.github.unidbg.linux.android.AndroidARM64Emulator.<init>(AndroidARM64Emulator.java:33)
+	at com.github.unidbg.linux.android.AndroidEmulatorBuilder.build(AndroidEmulatorBuilder.java:22)
+	at com.github.unidbg.linux.android.AndroidEmulatorBuilder.build(AndroidEmulatorBuilder.java:6)
+	at unidbg_loader.init(unidbg_loader.java:119)
+	at unidbg_loader.main(unidbg_loader.java:351)
+Caused by: java.lang.ClassNotFoundException: org.scijava.nativelib.NativeLoader
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 10 more
+
+2026-06-26 19:49:29,215 [INFO] 使用模拟数据演示静态分析 | apk_id=base
+2026-06-26 19:50:53,024 [INFO] PCAP分析引擎: pyshark
+2026-06-26 19:50:53,024 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 19:50:53,024 [INFO] 开始静态分析 | apk_id=base
+2026-06-26 19:50:53,036 [INFO] 从 APK 提取 5 个 SO，主目标: lib/arm64-v8a/libandroidx.graphics.path.so
+2026-06-26 19:50:53,793 [WARNING] Unidbg输出非JSON格式，尝试文本解析
+2026-06-26 19:50:53,793 [INFO] Unidbg分析完成 | apk_id=base
+2026-06-26 19:51:01,228 [INFO] PCAP分析引擎: pyshark
+2026-06-26 19:51:01,229 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 19:51:01,229 [INFO] 开始静态分析 | apk_id=base
+2026-06-26 19:51:01,238 [INFO] 从 APK 提取 5 个 SO，主目标: lib/arm64-v8a/libandroidx.graphics.path.so
+2026-06-26 19:51:02,006 [WARNING] Unidbg输出非JSON格式，尝试文本解析
+2026-06-26 19:51:02,006 [INFO] Unidbg分析完成 | apk_id=base
+2026-06-26 19:51:17,694 [INFO] PCAP分析引擎: pyshark
+2026-06-26 19:51:17,694 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 19:51:17,694 [INFO] 开始静态分析 | apk_id=base
+2026-06-26 19:51:17,704 [INFO] 从 APK 提取 5 个 SO，主目标: lib/arm64-v8a/libandroidx.graphics.path.so
+2026-06-26 19:51:18,659 [INFO] Unidbg分析完成 | apk_id=base
+2026-06-26 19:51:46,940 [INFO] PCAP分析引擎: pyshark
+2026-06-26 19:51:46,940 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 19:51:46,940 [INFO] 开始静态分析 | apk_id=base
+2026-06-26 19:51:46,957 [INFO] 从 APK 提取 5 个 SO，主目标: lib/arm64-v8a/libandroidx.graphics.path.so
+2026-06-26 19:51:47,768 [WARNING] Unidbg 部分失败: find method failed: androidx.graphics.path(I)Ljava/lang/String;
+2026-06-26 19:51:47,768 [INFO] Unidbg分析完成 | apk_id=base
+2026-06-26 19:52:08,268 [INFO] PCAP分析引擎: pyshark
+2026-06-26 19:52:08,268 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 19:52:08,268 [INFO] 开始静态分析 | apk_id=base
+2026-06-26 19:52:08,276 [INFO] 从 APK 提取 5 个 SO，主目标: lib/arm64-v8a/libandroidx.graphics.path.so
+2026-06-26 19:52:09,116 [WARNING] Unidbg 部分失败: find method failed: genKey(I)Ljava/lang/String;
+2026-06-26 19:52:09,116 [INFO] Unidbg分析完成 | apk_id=base
+2026-06-26 19:52:15,046 [WARNING] pcap_analyzer模块未找到，PCAP分析功能不可用
+2026-06-26 19:52:15,046 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 19:52:15,046 [INFO] 扫描 samples/ 目录，发现 5 个文件
+2026-06-26 19:52:15,062 [INFO] 从 APK 提取 5 个 SO，主目标: lib/arm64-v8a/libandroidx.graphics.path.so
+2026-06-26 19:52:15,062 [INFO] 列出 8 个样本
+2026-06-26 19:52:15,062 [INFO] 开始静态分析 | apk_id=sample_001
+2026-06-26 19:52:15,062 [INFO] 使用模拟数据演示静态分析 | apk_id=sample_001
+2026-06-26 19:52:15,062 [INFO] 开始动态分析 | apk_id=sample_001 | bypass_evasion=True | timeout=120s
+2026-06-26 19:52:15,062 [INFO] 开始检测评估...
+2026-06-26 19:52:15,065 [INFO] 读取特征数据: 120 条记录
+2026-06-26 19:52:15,904 [INFO] 加载已有模型（dict格式）
+2026-06-26 19:52:17,184 [INFO] 特征重要性图已保存: D:\code\VScode\Py\MobC2Inspector\data\feature_importance.png
+2026-06-26 19:52:17,192 [INFO] 评估完成: ACC=1.0000, PRE=1.0000, REC=1.0000, F1=1.0000, AUC=1.0000, FPR=0.0000
+2026-06-26 19:52:17,193 [INFO] 生成分析报告 | target_id=sample_001
+2026-06-26 19:52:17,193 [INFO] 开始静态分析 | apk_id=sample_001
+2026-06-26 19:52:17,193 [INFO] 使用模拟数据演示静态分析 | apk_id=sample_001
+2026-06-26 19:52:17,193 [INFO] 开始动态分析 | apk_id=sample_001 | bypass_evasion=True | timeout=120s
+2026-06-26 19:52:17,194 [INFO] 开始流量捕获 | apk_id=sample_001 | duration=60s | tcpdump=True
+2026-06-26 19:52:17,194 [INFO] 开始检测评估...
+2026-06-26 19:52:17,194 [INFO] 读取特征数据: 120 条记录
+2026-06-26 19:52:17,208 [INFO] 加载已有模型（dict格式）
+2026-06-26 19:52:18,291 [INFO] 特征重要性图已保存: D:\code\VScode\Py\MobC2Inspector\data\feature_importance.png
+2026-06-26 19:52:18,300 [INFO] 评估完成: ACC=1.0000, PRE=1.0000, REC=1.0000, F1=1.0000, AUC=1.0000, FPR=0.0000
+2026-06-26 19:52:18,300 [INFO] APK报告已保存: D:\code\VScode\Py\MobC2Inspector\reports\report_sample_001_20260626_195218.md
+2026-06-26 19:52:23,090 [INFO] PCAP分析引擎: pyshark
+2026-06-26 19:52:23,095 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 19:52:23,095 [INFO] 执行工具: static_analysis | params={"apk_id": "base"}
+2026-06-26 19:52:23,095 [INFO] 开始静态分析 | apk_id=base
+2026-06-26 19:52:23,104 [INFO] 从 APK 提取 5 个 SO，主目标: lib/arm64-v8a/libandroidx.graphics.path.so
+2026-06-26 19:52:23,847 [WARNING] Unidbg 部分失败: find method failed: genKey(I)Ljava/lang/String;
+2026-06-26 19:52:23,847 [INFO] Unidbg分析完成 | apk_id=base
+2026-06-26 20:04:47,912 [INFO] PCAP分析引擎: pyshark
+2026-06-26 20:04:47,921 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 20:04:47,921 [INFO] 执行工具: list_samples | params={}
+2026-06-26 20:04:47,922 [INFO] 扫描 samples/ 目录，发现 5 个文件
+2026-06-26 20:04:47,937 [INFO] 从 APK 提取 5 个 SO，主目标: lib/arm64-v8a/libandroidx.graphics.path.so
+2026-06-26 20:04:47,945 [INFO] 列出 8 个样本
+2026-06-26 20:05:15,638 [INFO] PCAP分析引擎: pyshark
+2026-06-26 20:06:13,291 [INFO] PCAP分析引擎: pyshark
+2026-06-26 20:06:13,300 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 20:06:13,300 [INFO] 执行工具: static_analysis | params={"apk_id": "base"}
+2026-06-26 20:06:13,300 [INFO] 开始静态分析 | apk_id=base
+2026-06-26 20:06:13,316 [INFO] 从 APK 提取 5 个 SO，主目标: lib/arm64-v8a/libandroidx.graphics.path.so
+2026-06-26 20:06:14,156 [WARNING] Unidbg 部分失败: find method failed: genKey(I)Ljava/lang/String;
+2026-06-26 20:06:14,156 [INFO] Unidbg分析完成 | apk_id=base
+2026-06-26 20:15:45,368 [INFO] PCAP分析引擎: pyshark
+2026-06-26 20:15:45,374 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 20:15:45,374 [INFO] 执行工具: dynamic_analysis | params={"apk_id": "base", "bypass_evasion": true}
+2026-06-26 20:15:45,374 [INFO] 开始动态分析 | apk_id=base | bypass_evasion=True | timeout=120s
+2026-06-26 20:18:37,092 [INFO] PCAP分析引擎: pyshark
+2026-06-26 20:19:17,480 [INFO] PCAP分析引擎: pyshark
+2026-06-26 20:19:17,485 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 20:19:17,485 [INFO] 执行工具: dynamic_analysis | params={"apk_id": "base", "bypass_evasion": true}
+2026-06-26 20:19:17,485 [INFO] 开始动态分析 | apk_id=base | bypass_evasion=True | timeout=120s
+2026-06-26 20:22:10,068 [WARNING] pcap_analyzer模块未找到，PCAP分析功能不可用
+2026-06-26 20:22:10,068 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 20:22:10,068 [INFO] 扫描 samples/ 目录，发现 5 个文件
+2026-06-26 20:22:10,079 [INFO] 从 APK 提取 5 个 SO，主目标: lib/arm64-v8a/libandroidx.graphics.path.so
+2026-06-26 20:22:10,079 [INFO] 列出 8 个样本
+2026-06-26 20:22:10,079 [INFO] 开始静态分析 | apk_id=sample_001
+2026-06-26 20:22:10,079 [INFO] 使用模拟数据演示静态分析 | apk_id=sample_001
+2026-06-26 20:22:10,079 [INFO] 开始动态分析 | apk_id=sample_001 | bypass_evasion=True | timeout=120s
+2026-06-26 20:22:10,079 [INFO] 开始检测评估...
+2026-06-26 20:22:10,079 [INFO] 读取特征数据: 120 条记录
+2026-06-26 20:22:10,796 [INFO] 加载已有模型（dict格式）
+2026-06-26 20:22:12,074 [INFO] 特征重要性图已保存: D:\code\VScode\Py\MobC2Inspector\data\feature_importance.png
+2026-06-26 20:22:12,079 [INFO] 评估完成: ACC=1.0000, PRE=1.0000, REC=1.0000, F1=1.0000, AUC=1.0000, FPR=0.0000
+2026-06-26 20:22:12,079 [INFO] 生成分析报告 | target_id=sample_001
+2026-06-26 20:22:12,079 [INFO] 开始静态分析 | apk_id=sample_001
+2026-06-26 20:22:12,079 [INFO] 使用模拟数据演示静态分析 | apk_id=sample_001
+2026-06-26 20:22:12,079 [INFO] 开始动态分析 | apk_id=sample_001 | bypass_evasion=True | timeout=120s
+2026-06-26 20:22:12,079 [INFO] 开始流量捕获 | apk_id=sample_001 | duration=60s | tcpdump=True
+2026-06-26 20:22:12,079 [INFO] 开始检测评估...
+2026-06-26 20:22:12,079 [INFO] 读取特征数据: 120 条记录
+2026-06-26 20:22:12,089 [INFO] 加载已有模型（dict格式）
+2026-06-26 20:22:13,055 [INFO] 特征重要性图已保存: D:\code\VScode\Py\MobC2Inspector\data\feature_importance.png
+2026-06-26 20:22:13,060 [INFO] 评估完成: ACC=1.0000, PRE=1.0000, REC=1.0000, F1=1.0000, AUC=1.0000, FPR=0.0000
+2026-06-26 20:22:13,060 [INFO] APK报告已保存: D:\code\VScode\Py\MobC2Inspector\reports\report_sample_001_20260626_202213.md
+2026-06-26 20:22:17,661 [INFO] PCAP分析引擎: pyshark
+2026-06-26 20:22:17,661 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-26 20:22:17,661 [INFO] 执行工具: list_samples | params={}
+2026-06-26 20:22:17,661 [INFO] 扫描 samples/ 目录，发现 5 个文件
+2026-06-26 20:22:17,671 [INFO] 从 APK 提取 5 个 SO，主目标: lib/arm64-v8a/libandroidx.graphics.path.so
+2026-06-26 20:22:17,671 [INFO] 列出 5 个样本
+2026-06-26 20:22:23,409 [INFO] PCAP分析引擎: pyshark
+2026-06-26 20:22:23,411 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-26 20:22:23,411 [INFO] 开始静态分析 | apk_id=base
+2026-06-26 20:22:23,421 [INFO] 从 APK 提取 5 个 SO，主目标: lib/arm64-v8a/libandroidx.graphics.path.so
+2026-06-26 20:22:24,171 [WARNING] Unidbg 部分失败: find method failed: genKey(I)Ljava/lang/String;
+2026-06-26 20:22:24,171 [INFO] Unidbg分析完成 | apk_id=base
+2026-06-26 20:22:30,701 [INFO] PCAP分析引擎: pyshark
+2026-06-26 20:22:30,701 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-26 20:22:30,701 [INFO] 开始动态分析 | apk_id=base | bypass_evasion=True | timeout=120s
+2026-06-26 20:22:30,712 [INFO] 从 APK 提取 5 个 SO，主目标: lib/arm64-v8a/libandroidx.graphics.path.so
+2026-06-26 20:22:30,712 [INFO] 安装 APK 到设备 | pkg=base | path=D:\code\VScode\Py\MobC2Inspector\samples\base.apk
+2026-06-26 20:22:42,846 [WARNING] APK 安装失败: adb: failed to install D:\code\VScode\Py\MobC2Inspector\samples\base.apk: Failure [INSTALL_FAILED_TEST_ONLY: installPackageLI]
+2026-06-26 20:22:55,229 [INFO] PCAP分析引擎: pyshark
+2026-06-26 20:22:55,234 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-26 20:22:55,234 [INFO] 开始动态分析 | apk_id=base | bypass_evasion=True | timeout=120s
+2026-06-26 20:22:55,239 [INFO] 从 APK 提取 5 个 SO，主目标: lib/arm64-v8a/libandroidx.graphics.path.so
+2026-06-26 20:22:55,239 [INFO] 安装 APK 到设备 | pkg=base | path=D:\code\VScode\Py\MobC2Inspector\samples\base.apk
+2026-06-26 20:23:07,652 [INFO] APK 安装成功: base
+2026-06-26 20:23:07,667 [INFO] 数据收集服务器运行在 http://127.0.0.1:8888
+2026-06-26 20:23:07,678 [INFO] 执行Frida注入: frida -U --no-pause -f base -l C:\Users\Lenovo\AppData\Local\Temp\tmpp4982c25.js
+2026-06-26 20:24:50,325 [INFO] PCAP分析引擎: pyshark
+2026-06-26 20:24:50,330 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-26 20:25:08,870 [INFO] PCAP分析引擎: pyshark
+2026-06-26 20:25:08,870 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-26 20:25:29,165 [INFO] PCAP分析引擎: pyshark
+2026-06-26 20:25:29,165 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-26 20:25:29,170 [INFO] 执行工具: dynamic_analysis | params={"apk_id": "base", "bypass_evasion": true}
+2026-06-26 20:25:29,170 [INFO] 开始动态分析 | apk_id=base | bypass_evasion=True | timeout=120s
+2026-06-26 20:25:29,181 [INFO] 从 APK 提取 5 个 SO，主目标: lib/arm64-v8a/libandroidx.graphics.path.so
+2026-06-26 20:25:29,181 [INFO] 安装 APK 到设备 | pkg=base | path=D:\code\VScode\Py\MobC2Inspector\samples\base.apk
+2026-06-26 20:25:29,219 [WARNING] APK 安装失败: adb.exe: device offline
+2026-06-26 20:29:06,915 [INFO] PCAP分析引擎: pyshark
+2026-06-26 20:29:06,915 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-26 20:29:06,927 [INFO] 从 APK 提取 5 个 SO，主目标: lib/arm64-v8a/libandroidx.graphics.path.so
+2026-06-26 20:29:11,235 [INFO] PCAP分析引擎: pyshark
+2026-06-26 20:29:17,385 [INFO] PCAP分析引擎: pyshark
+2026-06-26 20:29:23,374 [WARNING] pcap_analyzer模块未找到，PCAP分析功能不可用
+2026-06-26 20:29:23,375 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 20:29:23,375 [INFO] 扫描 samples/ 目录，发现 5 个文件
+2026-06-26 20:29:23,385 [INFO] 从 APK 提取 5 个 SO，主目标: lib/arm64-v8a/libandroidx.graphics.path.so
+2026-06-26 20:29:23,385 [INFO] 列出 8 个样本
+2026-06-26 20:29:23,385 [INFO] 开始静态分析 | apk_id=sample_001
+2026-06-26 20:29:23,385 [INFO] 使用模拟数据演示静态分析 | apk_id=sample_001
+2026-06-26 20:29:23,385 [INFO] 开始动态分析 | apk_id=sample_001 | bypass_evasion=True | timeout=120s | attach=False
+2026-06-26 20:29:23,385 [INFO] 开始检测评估...
+2026-06-26 20:29:23,386 [INFO] 读取特征数据: 120 条记录
+2026-06-26 20:36:14,899 [INFO] PCAP分析引擎: pyshark
+2026-06-26 20:36:14,902 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-26 20:36:14,902 [INFO] 执行工具: dynamic_analysis | params={"apk_id": "base", "attach": true, "bypass_evasion": true, "pkg": "TestC2"}
+2026-06-26 20:36:14,902 [INFO] 开始动态分析 | apk_id=base | bypass_evasion=True | timeout=120s | attach=True
+2026-06-26 20:36:14,906 [INFO] 数据收集服务器运行在 http://127.0.0.1:8888
+2026-06-26 20:36:14,918 [INFO] 从 APK 提取 5 个 SO，主目标: lib/arm64-v8a/libandroidx.graphics.path.so
+2026-06-26 20:36:14,923 [INFO] 执行Frida注入: frida -U base -l C:\Users\Lenovo\AppData\Local\Temp\tmp3tfg0ehd.js
+2026-06-26 20:38:15,027 [INFO] 数据收集服务器已停止
+2026-06-26 20:38:15,027 [WARNING] 未采集到任何网络数据，返回空特征
+2026-06-26 20:46:19,512 [INFO] PCAP分析引擎: pyshark
+2026-06-26 20:46:19,512 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-26 20:46:19,546 [INFO] ADB reverse 成功: tcp:8888 -> tcp:8888
+2026-06-26 20:47:10,394 [INFO] PCAP分析引擎: pyshark
+2026-06-26 20:47:10,400 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-26 20:47:10,400 [INFO] 执行工具: dynamic_analysis | params={"apk_id": "base", "attach": true, "bypass_evasion": true, "pkg": "TestC2"}
+2026-06-26 20:47:10,400 [INFO] 开始动态分析 | apk_id=base | bypass_evasion=True | timeout=120s | attach=True
+2026-06-26 20:47:10,416 [INFO] ADB reverse 成功: tcp:8888 -> tcp:8888
+2026-06-26 20:47:10,430 [INFO] 数据收集服务器运行在 http://127.0.0.1:8888
+2026-06-26 20:47:10,446 [INFO] 从 APK 提取 5 个 SO，主目标: lib/arm64-v8a/libandroidx.graphics.path.so
+2026-06-26 20:47:10,446 [INFO] 执行Frida注入: frida -U base -l C:\Users\Lenovo\AppData\Local\Temp\tmps7wcw8l0.js
+2026-06-26 20:49:10,481 [INFO] 数据收集服务器已停止
+2026-06-26 20:49:10,481 [WARNING] 未采集到任何网络数据，返回空特征
+2026-06-26 20:51:22,235 [INFO] PCAP分析引擎: pyshark
+2026-06-26 20:51:22,235 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-26 20:51:22,247 [INFO] 从 APK 提取 5 个 SO，主目标: lib/arm64-v8a/libandroidx.graphics.path.so
+2026-06-26 20:51:37,829 [WARNING] pcap_analyzer模块未找到，PCAP分析功能不可用
+2026-06-26 20:51:37,829 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=True
+2026-06-26 20:51:37,829 [INFO] 扫描 samples/ 目录，发现 5 个文件
+2026-06-26 20:51:37,839 [INFO] 从 APK 提取 5 个 SO，主目标: lib/arm64-v8a/libandroidx.graphics.path.so
+2026-06-26 20:51:37,839 [INFO] 列出 8 个样本
+2026-06-26 20:51:37,839 [INFO] 开始静态分析 | apk_id=sample_001
+2026-06-26 20:51:37,839 [INFO] 使用模拟数据演示静态分析 | apk_id=sample_001
+2026-06-26 20:51:37,839 [INFO] 开始动态分析 | apk_id=sample_001 | bypass_evasion=True | timeout=120s | attach=False | process_name=None
+2026-06-26 20:51:37,839 [INFO] 开始检测评估...
+2026-06-26 20:51:37,839 [INFO] 读取特征数据: 120 条记录
+2026-06-26 20:52:49,887 [INFO] PCAP分析引擎: pyshark
+2026-06-26 20:52:49,888 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-26 20:52:49,888 [INFO] 执行工具: dynamic_analysis | params={"apk_id": "base", "attach": true, "process_name": "TestC2", "bypass_evasion": true}
+2026-06-26 20:52:49,888 [INFO] 开始动态分析 | apk_id=base | bypass_evasion=True | timeout=120s | attach=True | process_name=TestC2
+2026-06-26 20:52:49,912 [INFO] ADB reverse 成功: tcp:8888 -> tcp:8888
+2026-06-26 20:52:49,922 [INFO] 数据收集服务器运行在 http://127.0.0.1:8888
+2026-06-26 20:52:49,935 [INFO] 从 APK 提取 5 个 SO，主目标: lib/arm64-v8a/libandroidx.graphics.path.so
+2026-06-26 20:52:49,935 [INFO] 执行Frida注入: frida -U TestC2 -l C:\Users\Lenovo\AppData\Local\Temp\tmpmsugo0vu.js
+2026-06-26 20:54:50,241 [INFO] 数据收集服务器已停止
+2026-06-26 20:54:50,242 [WARNING] 未采集到任何网络数据，返回空特征
+2026-06-26 21:35:42,566 [INFO] PCAP分析引擎: pyshark
+2026-06-26 21:35:42,571 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-26 21:35:42,571 [INFO] MCP Server 启动 (stdio模式)
+2026-06-26 21:35:42,571 [INFO] 等待JSON-RPC请求...
+2026-06-26 21:36:12,095 [INFO] PCAP分析引擎: pyshark
+2026-06-26 21:36:12,098 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-26 21:36:12,100 [INFO] MCP Server 启动 (stdio模式)
+2026-06-26 21:36:12,100 [INFO] 等待JSON-RPC请求...
+2026-06-26 21:36:55,811 [INFO] 收到中断信号，MCP Server关闭
+2026-06-26 21:41:16,914 [INFO] PCAP分析引擎: pyshark
+2026-06-26 21:41:16,919 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-26 21:41:44,772 [INFO] PCAP分析引擎: pyshark
+2026-06-26 21:41:44,772 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-26 21:41:44,777 [INFO] 执行工具: dynamic_analysis | params={"apk_id": "trojan.apk", "bypass_evasion": false}
+2026-06-26 21:41:44,777 [INFO] 开始动态分析 | apk_id=trojan.apk | bypass_evasion=False | timeout=120s | attach=False | process_name=None
+2026-06-26 21:41:44,802 [INFO] ADB reverse 成功: tcp:8888 -> tcp:8888
+2026-06-26 21:41:44,808 [INFO] 数据收集服务器运行在 http://127.0.0.1:8888
+2026-06-26 21:41:44,810 [INFO] 执行Frida注入: frida -U --no-pause -f trojan.apk -l D:\code\VScode\Py\MobC2Inspector\frida_scripts\frida_hook_network.js
+2026-06-26 21:43:45,068 [INFO] 数据收集服务器已停止
+2026-06-26 21:43:45,070 [WARNING] 未采集到任何网络数据，返回空特征
+2026-06-26 21:44:04,540 [INFO] PCAP分析引擎: pyshark
+2026-06-26 21:44:04,540 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-26 21:44:04,540 [INFO] 执行工具: dynamic_analysis | params={"apk_id": "base", "attach": true, "process_name": "TestC2", "bypass_evasion": true}
+2026-06-26 21:44:04,540 [INFO] 开始动态分析 | apk_id=base | bypass_evasion=True | timeout=120s | attach=True | process_name=TestC2
+2026-06-26 21:44:04,565 [INFO] ADB reverse 成功: tcp:8888 -> tcp:8888
+2026-06-26 21:44:04,569 [INFO] 数据收集服务器运行在 http://127.0.0.1:8888
+2026-06-26 21:44:04,585 [INFO] 从 APK 提取 5 个 SO，主目标: lib/arm64-v8a/libandroidx.graphics.path.so
+2026-06-26 21:44:04,587 [INFO] 执行Frida注入: frida -U TestC2 -l C:\Users\Lenovo\AppData\Local\Temp\tmpsnx8te2o.js
+2026-06-26 21:46:04,836 [INFO] 数据收集服务器已停止
+2026-06-26 21:46:04,836 [WARNING] 未采集到任何网络数据，返回空特征
+2026-06-26 21:54:08,999 [INFO] PCAP分析引擎: pyshark
+2026-06-26 21:54:08,999 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-26 21:54:41,464 [INFO] PCAP分析引擎: pyshark
+2026-06-26 21:54:41,466 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-26 21:54:41,467 [INFO] 执行工具: traffic_capture | params={"apk_id": "trojan.apk", "duration_sec": 60}
+2026-06-26 21:54:41,467 [INFO] 开始流量捕获 | apk_id=trojan.apk | duration=60s | tcpdump=True
+2026-06-26 21:54:41,551 [INFO] 使用Frida内存抓取模式（绕过反抓包检测）
+2026-06-26 21:56:20,741 [INFO] PCAP分析引擎: pyshark
+2026-06-26 21:56:20,746 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-26 21:56:20,746 [INFO] 执行工具: traffic_capture | params={"apk_id": "TestC2", "duration_sec": 60}
+2026-06-26 21:56:20,746 [INFO] 开始流量捕获 | apk_id=TestC2 | duration=60s | tcpdump=True
+2026-06-26 21:56:20,835 [INFO] 使用Frida内存抓取模式（绕过反抓包检测）
+2026-06-27 08:54:22,667 [INFO] PCAP分析引擎: pyshark
+2026-06-27 08:54:51,611 [INFO] PCAP分析引擎: pyshark
+2026-06-27 08:54:51,614 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-27 08:55:22,310 [INFO] PCAP分析引擎: pyshark
+2026-06-27 08:55:22,313 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-27 08:55:33,143 [INFO] PCAP分析引擎: pyshark
+2026-06-27 08:55:33,145 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-27 08:55:33,145 [INFO] 执行工具: dynamic_analysis | params={"apk_id": "testc2", "attach": true, "process_name": "TestC2", "bypass_evasion": true, "timeout_sec": 120}
+2026-06-27 08:55:33,145 [INFO] 开始动态分析 | apk_id=testc2 | bypass_evasion=True | timeout=120s | attach=True | process_name=TestC2
+2026-06-27 08:55:33,192 [INFO] ADB reverse 成功: tcp:8888 -> tcp:8888
+2026-06-27 08:55:33,207 [INFO] 数据收集服务器运行在 http://127.0.0.1:8888
+2026-06-27 08:55:33,209 [INFO] 执行Frida注入: frida -U TestC2 -l C:\Users\Lenovo\AppData\Local\Temp\tmp4tcxz5dd.js
+2026-06-27 08:55:52,625 [INFO] 数据收集服务器已停止
+2026-06-27 08:59:20,434 [INFO] PCAP分析引擎: pyshark
+2026-06-27 08:59:20,437 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-27 08:59:20,437 [INFO] 执行工具: dynamic_analysis | params={"apk_id": "com.malware.testc2", "attach": false, "bypass_evasion": true, "timeout_sec": 120}
+2026-06-27 08:59:20,437 [INFO] 开始动态分析 | apk_id=com.malware.testc2 | bypass_evasion=True | timeout=120s | attach=False | process_name=None
+2026-06-27 08:59:20,457 [INFO] ADB reverse 成功: tcp:8888 -> tcp:8888
+2026-06-27 08:59:20,463 [INFO] 数据收集服务器运行在 http://127.0.0.1:8888
+2026-06-27 08:59:20,464 [INFO] 执行Frida注入: frida -U --no-pause -f com.malware.testc2 -l C:\Users\Lenovo\AppData\Local\Temp\tmpo7gt2u2j.js
+2026-06-27 09:00:28,509 [INFO] 数据收集服务器已停止
+2026-06-27 09:00:42,143 [INFO] PCAP分析引擎: pyshark
+2026-06-27 09:00:42,147 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-27 09:00:42,147 [INFO] 执行工具: dynamic_analysis | params={"apk_id": "Testc2", "attach": false, "bypass_evasion": true, "timeout_sec": 120}
+2026-06-27 09:00:42,147 [INFO] 开始动态分析 | apk_id=Testc2 | bypass_evasion=True | timeout=120s | attach=False | process_name=None
+2026-06-27 09:00:42,178 [INFO] ADB reverse 成功: tcp:8888 -> tcp:8888
+2026-06-27 09:00:42,191 [INFO] 数据收集服务器运行在 http://127.0.0.1:8888
+2026-06-27 09:00:42,193 [INFO] 执行Frida注入: frida -U --no-pause -f Testc2 -l C:\Users\Lenovo\AppData\Local\Temp\tmpn8hkj6x7.js
+2026-06-27 09:00:55,512 [INFO] 数据收集服务器已停止
+2026-06-27 09:02:21,079 [INFO] PCAP分析引擎: pyshark
+2026-06-27 09:02:21,081 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-27 09:02:21,082 [INFO] 执行工具: dynamic_analysis | params={"apk_id": "com.cc.mumac2", "attach": false, "bypass_evasion": true, "timeout_sec": 120}
+2026-06-27 09:02:21,082 [INFO] 开始动态分析 | apk_id=com.cc.mumac2 | bypass_evasion=True | timeout=120s | attach=False | process_name=None
+2026-06-27 09:02:21,110 [INFO] ADB reverse 成功: tcp:8888 -> tcp:8888
+2026-06-27 09:02:21,117 [INFO] 数据收集服务器运行在 http://127.0.0.1:8888
+2026-06-27 09:02:21,118 [INFO] 执行Frida注入: frida -U --no-pause -f com.cc.mumac2 -l C:\Users\Lenovo\AppData\Local\Temp\tmpfcp9za02.js
+2026-06-27 09:04:21,313 [INFO] 数据收集服务器已停止
+2026-06-27 09:04:21,313 [WARNING] 未采集到任何网络数据，返回空特征
+2026-06-27 09:06:49,641 [INFO] PCAP分析引擎: pyshark
+2026-06-27 09:06:49,643 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-27 09:06:49,643 [INFO] 执行工具: dynamic_analysis | params={"apk_id": "com.cc.mumac2", "attach": false, "bypass_evasion": true, "timeout_sec": 120}
+2026-06-27 09:06:49,643 [INFO] 开始动态分析 | apk_id=com.cc.mumac2 | bypass_evasion=True | timeout=120s | attach=False | process_name=None
+2026-06-27 09:06:49,673 [INFO] ADB reverse 成功: tcp:8888 -> tcp:8888
+2026-06-27 09:06:49,679 [INFO] 数据收集服务器运行在 http://127.0.0.1:8888
+2026-06-27 09:06:49,680 [INFO] 执行Frida注入: frida -U --no-pause -f com.cc.mumac2 -l C:\Users\Lenovo\AppData\Local\Temp\tmpbh2wp8b5.js
+2026-06-27 09:08:49,747 [INFO] 数据收集服务器已停止
+2026-06-27 09:08:49,749 [WARNING] 未采集到任何网络数据，返回空特征
+2026-06-27 09:38:53,809 [INFO] PCAP分析引擎: pyshark
+2026-06-27 09:38:53,811 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-27 09:38:53,811 [INFO] 执行工具: dynamic_analysis | params={"apk_id": "com.cc.mumac2", "attach": false, "bypass_evasion": true, "timeout_sec": 120}
+2026-06-27 09:38:53,811 [INFO] 开始动态分析 | apk_id=com.cc.mumac2 | bypass_evasion=True | timeout=120s | attach=False | process_name=None
+2026-06-27 09:38:53,835 [INFO] ADB reverse 成功: tcp:8888 -> tcp:8888
+2026-06-27 09:38:53,841 [INFO] 数据收集服务器运行在 http://127.0.0.1:8888
+2026-06-27 09:38:53,843 [INFO] 执行Frida注入: frida -U --no-pause -f com.cc.mumac2 -l C:\Users\Lenovo\AppData\Local\Temp\tmp1sdnp2dw.js
+2026-06-27 09:40:53,952 [INFO] 数据收集服务器已停止
+2026-06-27 09:40:53,954 [WARNING] 未采集到任何网络数据，返回空特征
+2026-06-27 09:58:57,751 [INFO] PCAP分析引擎: pyshark
+2026-06-27 09:58:57,774 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-27 09:58:57,775 [INFO] 执行工具: dynamic_analysis | params={"apk_id": "com.cc.mumac2", "attach": true, "process_name": "com.cc.mumac2", "bypass_evasion": true, "timeout_sec": 120}
+2026-06-27 09:58:57,775 [INFO] 开始动态分析 | apk_id=com.cc.mumac2 | bypass_evasion=True | timeout=120s | attach=True | process_name=com.cc.mumac2
+2026-06-27 09:58:57,821 [INFO] ADB reverse 成功: tcp:8888 -> tcp:8888
+2026-06-27 09:58:57,832 [INFO] 数据收集服务器运行在 http://127.0.0.1:8888
+2026-06-27 09:58:57,835 [INFO] 执行Frida注入: frida -U com.cc.mumac2 -l C:\Users\Lenovo\AppData\Local\Temp\tmpqc0mbhgs.js
+2026-06-27 10:00:07,290 [INFO] 数据收集服务器已停止
+2026-06-27 10:00:16,660 [INFO] PCAP分析引擎: pyshark
+2026-06-27 10:00:16,662 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-27 10:00:16,662 [INFO] 执行工具: dynamic_analysis | params={"apk_id": "com.cc.mumac2", "attach": true, "process_name": "TestC2", "bypass_evasion": true, "timeout_sec": 120}
+2026-06-27 10:00:16,663 [INFO] 开始动态分析 | apk_id=com.cc.mumac2 | bypass_evasion=True | timeout=120s | attach=True | process_name=TestC2
+2026-06-27 10:00:16,693 [INFO] ADB reverse 成功: tcp:8888 -> tcp:8888
+2026-06-27 10:00:16,702 [INFO] 数据收集服务器运行在 http://127.0.0.1:8888
+2026-06-27 10:00:16,703 [INFO] 执行Frida注入: frida -U TestC2 -l C:\Users\Lenovo\AppData\Local\Temp\tmpl7n84k_1.js
+2026-06-27 10:02:08,499 [INFO] 数据收集服务器已停止
+2026-06-27 10:16:12,231 [INFO] PCAP分析引擎: pyshark
+2026-06-27 10:16:12,233 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-27 10:16:12,233 [INFO] 执行工具: dynamic_analysis | params={"apk_id": "com.cc.mumac2", "attach": true, "process_name": "TestC2", "bypass_evasion": true, "timeout_sec": 90}
+2026-06-27 10:16:12,234 [INFO] 开始动态分析 | apk_id=com.cc.mumac2 | bypass_evasion=True | timeout=120s | attach=True | process_name=TestC2
+2026-06-27 10:16:12,266 [INFO] ADB reverse 成功: tcp:8888 -> tcp:8888
+2026-06-27 10:16:12,280 [INFO] 数据收集服务器运行在 http://127.0.0.1:8888
+2026-06-27 10:16:12,282 [INFO] 执行Frida注入: frida -U TestC2 -l C:\Users\Lenovo\AppData\Local\Temp\tmp9rb_b3qk.js
+2026-06-27 10:17:05,401 [INFO] 数据收集服务器已停止
+2026-06-27 10:30:21,403 [INFO] PCAP分析引擎: pyshark
+2026-06-27 10:30:21,405 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-27 10:30:21,406 [INFO] 执行工具: dynamic_analysis | params={"apk_id": "com.cc.mumac2", "attach": true, "process_name": "TestC2", "bypass_evasion": true, "timeout_sec": 90}
+2026-06-27 10:30:21,406 [INFO] 开始动态分析 | apk_id=com.cc.mumac2 | bypass_evasion=True | timeout=120s | attach=True | process_name=TestC2
+2026-06-27 10:30:21,432 [INFO] ADB reverse 成功: tcp:8888 -> tcp:8888
+2026-06-27 10:30:21,439 [INFO] 数据收集服务器运行在 http://127.0.0.1:8888
+2026-06-27 10:30:21,440 [INFO] 执行Frida注入: frida -U TestC2 -l C:\Users\Lenovo\AppData\Local\Temp\tmpltvdiiit.js
+2026-06-27 10:32:06,105 [INFO] 数据收集服务器已停止
+2026-06-27 10:36:22,552 [INFO] PCAP分析引擎: pyshark
+2026-06-27 10:36:22,554 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-27 10:36:22,555 [INFO] 执行工具: dynamic_analysis | params={"apk_id": "com.cc.mumac2", "attach": true, "process_name": "TestC2", "bypass_evasion": true, "timeout_sec": 90}
+2026-06-27 10:36:22,555 [INFO] 开始动态分析 | apk_id=com.cc.mumac2 | bypass_evasion=True | timeout=120s | attach=True | process_name=TestC2
+2026-06-27 10:36:22,582 [INFO] ADB reverse 成功: tcp:8888 -> tcp:8888
+2026-06-27 10:36:22,588 [INFO] 数据收集服务器运行在 http://127.0.0.1:8888
+2026-06-27 10:36:22,589 [INFO] 执行Frida注入: frida -U TestC2 -l C:\Users\Lenovo\AppData\Local\Temp\tmpmo9ymw9u.js
+2026-06-27 10:38:23,007 [INFO] 数据收集服务器已停止
+2026-06-27 10:50:00,983 [INFO] PCAP分析引擎: pyshark
+2026-06-27 10:50:00,986 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-27 10:50:00,986 [INFO] 执行工具: dynamic_analysis | params={"apk_id": "com.cc.mumac2", "attach": true, "process_name": "TestC2", "bypass_evasion": true, "timeout_sec": 90}
+2026-06-27 10:50:00,987 [INFO] 开始动态分析 | apk_id=com.cc.mumac2 | bypass_evasion=True | timeout=120s | attach=True | process_name=TestC2
+2026-06-27 10:50:01,010 [INFO] ADB reverse 成功: tcp:8888 -> tcp:8888
+2026-06-27 10:50:01,018 [INFO] 数据收集服务器运行在 http://127.0.0.1:8888
+2026-06-27 10:50:01,020 [INFO] 执行Frida注入: frida -U TestC2 -l C:\Users\Lenovo\AppData\Local\Temp\tmp48wj2mly.js
+2026-06-27 10:52:01,216 [INFO] 数据收集服务器已停止
+2026-06-27 10:59:23,363 [INFO] PCAP分析引擎: pyshark
+2026-06-27 10:59:23,365 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-27 11:03:04,137 [INFO] PCAP分析引擎: pyshark
+2026-06-27 11:03:04,140 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-27 11:03:04,140 [INFO] 执行工具: traffic_capture | params={"apk_id": "TestC2", "duration_sec": 60}
+2026-06-27 11:03:04,140 [INFO] 开始流量捕获 | apk_id=TestC2 | duration=60s | tcpdump=True
+2026-06-27 11:03:04,221 [INFO] 使用Frida内存抓取模式（绕过反抓包检测）
+2026-06-27 11:15:13,885 [INFO] PCAP分析引擎: pyshark
+2026-06-27 11:15:13,888 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-27 11:15:13,888 [INFO] 执行工具: traffic_capture | params={"apk_id": "TestC2", "duration_sec": 60}
+2026-06-27 11:15:13,888 [INFO] 开始流量捕获 | apk_id=TestC2 | duration=60s | tcpdump=True
+2026-06-27 11:15:13,968 [INFO] tcpdump已启动，抓取 60s...
+2026-06-27 11:16:14,148 [INFO] pcap已保存至 D:\code\VScode\Py\MobC2Inspector\data\capture_TestC2_1782530113.pcap
+2026-06-27 11:17:23,187 [INFO] PCAP分析引擎: pyshark
+2026-06-27 11:17:23,189 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-27 11:17:23,189 [INFO] 执行工具: evaluate_detection | params={}
+2026-06-27 11:17:23,189 [INFO] 开始检测评估...
+2026-06-27 11:17:23,197 [INFO] 读取特征数据: 120 条记录
+2026-06-27 11:17:24,437 [INFO] 加载已有模型（dict格式）
+2026-06-27 11:17:25,787 [INFO] 特征重要性图已保存: D:\code\VScode\Py\MobC2Inspector\data\feature_importance.png
+2026-06-27 11:17:25,791 [INFO] 评估完成: ACC=1.0000, PRE=1.0000, REC=1.0000, F1=1.0000, AUC=1.0000, FPR=0.0000
+2026-06-27 11:18:20,271 [INFO] PCAP分析引擎: pyshark
+2026-06-27 11:18:20,273 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-27 11:18:20,273 [INFO] 执行工具: generate_report | params={"target_id": "com.cc.mumac2"}
+2026-06-27 11:18:20,273 [INFO] 生成分析报告 | target_id=com.cc.mumac2
+2026-06-27 11:18:20,273 [INFO] 开始静态分析 | apk_id=com.cc.mumac2
+2026-06-27 11:18:20,273 [INFO] 开始动态分析 | apk_id=com.cc.mumac2 | bypass_evasion=True | timeout=120s | attach=False | process_name=None
+2026-06-27 11:18:20,300 [INFO] ADB reverse 成功: tcp:8888 -> tcp:8888
+2026-06-27 11:18:20,309 [INFO] 数据收集服务器运行在 http://127.0.0.1:8888
+2026-06-27 11:18:20,310 [INFO] 执行Frida注入: frida -U --no-pause -f com.cc.mumac2 -l C:\Users\Lenovo\AppData\Local\Temp\tmp1c4d8tx5.js
+2026-06-27 11:20:02,532 [INFO] 数据收集服务器已停止
+2026-06-27 11:21:46,048 [INFO] PCAP分析引擎: pyshark
+2026-06-27 11:21:46,052 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-27 11:22:15,419 [INFO] PCAP分析引擎: pyshark
+2026-06-27 11:22:15,421 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-27 11:22:15,421 [INFO] 执行工具: generate_report | params={"target_id": "com.cc.mumac2", "attach": true, "process_name": "TestC2"}
+2026-06-27 11:22:15,421 [INFO] 生成分析报告 | target_id=com.cc.mumac2 | attach=True | process_name=TestC2
+2026-06-27 11:22:15,421 [INFO] 开始静态分析 | apk_id=com.cc.mumac2
+2026-06-27 11:22:15,421 [INFO] 开始动态分析 | apk_id=com.cc.mumac2 | bypass_evasion=True | timeout=120s | attach=True | process_name=TestC2
+2026-06-27 11:22:15,444 [INFO] ADB reverse 成功: tcp:8888 -> tcp:8888
+2026-06-27 11:22:15,455 [INFO] 数据收集服务器运行在 http://127.0.0.1:8888
+2026-06-27 11:22:15,457 [INFO] 执行Frida注入: frida -U TestC2 -l C:\Users\Lenovo\AppData\Local\Temp\tmpnuctyp7e.js
+2026-06-27 11:24:15,574 [INFO] 数据收集服务器已停止
+2026-06-27 11:24:15,575 [INFO] 开始流量捕获 | apk_id=com.cc.mumac2 | duration=60s | tcpdump=True
+2026-06-27 11:24:15,645 [INFO] tcpdump已启动，抓取 60s...
+2026-06-27 11:25:15,835 [INFO] pcap已保存至 D:\code\VScode\Py\MobC2Inspector\data\capture_com.cc.mumac2_1782530655.pcap
+2026-06-27 11:25:15,835 [INFO] 开始检测评估...
+2026-06-27 11:25:15,842 [INFO] 读取特征数据: 120 条记录
+2026-06-27 11:25:18,138 [INFO] 加载已有模型（dict格式）
+2026-06-27 11:25:21,420 [INFO] 特征重要性图已保存: D:\code\VScode\Py\MobC2Inspector\data\feature_importance.png
+2026-06-27 11:25:21,431 [INFO] 评估完成: ACC=1.0000, PRE=1.0000, REC=1.0000, F1=1.0000, AUC=1.0000, FPR=0.0000
+2026-06-27 11:25:21,432 [ERROR] generate_report失败: 'list' object has no attribute 'get'
+2026-06-27 11:25:21,432 [ERROR] 工具执行错误 [generate_report]: [-32603] 报告生成失败: 'list' object has no attribute 'get'
+2026-06-27 11:30:31,001 [INFO] PCAP分析引擎: pyshark
+2026-06-27 11:30:31,003 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-27 11:30:31,004 [INFO] 执行工具: generate_report | params={"target_id": "com.cc.mumac2", "attach": true, "process_name": "TestC2"}
+2026-06-27 11:30:31,004 [INFO] 生成分析报告 | target_id=com.cc.mumac2 | attach=True | process_name=TestC2
+2026-06-27 11:30:31,004 [INFO] 开始静态分析 | apk_id=com.cc.mumac2
+2026-06-27 11:30:31,004 [INFO] 开始动态分析 | apk_id=com.cc.mumac2 | bypass_evasion=True | timeout=120s | attach=True | process_name=TestC2
+2026-06-27 11:30:31,033 [INFO] ADB reverse 成功: tcp:8888 -> tcp:8888
+2026-06-27 11:30:31,042 [INFO] 数据收集服务器运行在 http://127.0.0.1:8888
+2026-06-27 11:30:31,044 [INFO] 执行Frida注入: frida -U TestC2 -l C:\Users\Lenovo\AppData\Local\Temp\tmpeg3w5pu0.js
+2026-06-27 11:32:31,345 [INFO] 数据收集服务器已停止
+2026-06-27 11:32:31,347 [INFO] 开始流量捕获 | apk_id=com.cc.mumac2 | duration=60s | tcpdump=True
+2026-06-27 11:32:31,432 [INFO] tcpdump已启动，抓取 60s...
+2026-06-27 11:33:31,624 [INFO] pcap已保存至 D:\code\VScode\Py\MobC2Inspector\data\capture_com.cc.mumac2_1782531151.pcap
+2026-06-27 11:33:31,625 [INFO] 开始检测评估...
+2026-06-27 11:33:31,632 [INFO] 读取特征数据: 120 条记录
+2026-06-27 11:33:32,397 [INFO] 加载已有模型（dict格式）
+2026-06-27 11:33:33,662 [INFO] 特征重要性图已保存: D:\code\VScode\Py\MobC2Inspector\data\feature_importance.png
+2026-06-27 11:33:33,666 [INFO] 评估完成: ACC=1.0000, PRE=1.0000, REC=1.0000, F1=1.0000, AUC=1.0000, FPR=0.0000
+2026-06-27 11:33:33,666 [ERROR] generate_report失败: Unknown format code 'f' for object of type 'str'
+2026-06-27 11:33:33,666 [ERROR] 工具执行错误 [generate_report]: [-32603] 报告生成失败: Unknown format code 'f' for object of type 'str'
+2026-06-27 11:38:09,443 [INFO] PCAP分析引擎: pyshark
+2026-06-27 11:38:09,445 [INFO] 分析引擎初始化完成 | adb=adb | demo_mode=False
+2026-06-27 11:38:09,445 [INFO] 执行工具: generate_report | params={"target_id": "com.cc.mumac2", "attach": true, "process_name": "TestC2"}
+2026-06-27 11:38:09,445 [INFO] 生成分析报告 | target_id=com.cc.mumac2 | attach=True | process_name=TestC2
+2026-06-27 11:38:09,445 [INFO] 开始静态分析 | apk_id=com.cc.mumac2
+2026-06-27 11:38:09,445 [INFO] 开始动态分析 | apk_id=com.cc.mumac2 | bypass_evasion=True | timeout=120s | attach=True | process_name=TestC2
+2026-06-27 11:38:09,473 [INFO] ADB reverse 成功: tcp:8888 -> tcp:8888
+2026-06-27 11:38:09,480 [INFO] 数据收集服务器运行在 http://127.0.0.1:8888
+2026-06-27 11:38:09,482 [INFO] 执行Frida注入: frida -U TestC2 -l C:\Users\Lenovo\AppData\Local\Temp\tmpems2d5tr.js
+2026-06-27 11:40:09,553 [INFO] 数据收集服务器已停止
+2026-06-27 11:40:09,555 [INFO] 开始流量捕获 | apk_id=com.cc.mumac2 | duration=60s | tcpdump=True
+2026-06-27 11:40:09,641 [INFO] tcpdump已启动，抓取 60s...
+2026-06-27 11:41:09,793 [INFO] pcap已保存至 D:\code\VScode\Py\MobC2Inspector\data\capture_com.cc.mumac2_1782531609.pcap
+2026-06-27 11:41:09,793 [INFO] 开始检测评估...
+2026-06-27 11:41:09,799 [INFO] 读取特征数据: 120 条记录
+2026-06-27 11:41:10,569 [INFO] 加载已有模型（dict格式）
+2026-06-27 11:41:11,853 [INFO] 特征重要性图已保存: D:\code\VScode\Py\MobC2Inspector\data\feature_importance.png
+2026-06-27 11:41:11,856 [INFO] 评估完成: ACC=1.0000, PRE=1.0000, REC=1.0000, F1=1.0000, AUC=1.0000, FPR=0.0000
+2026-06-27 11:41:11,857 [INFO] APK报告已保存: D:\code\VScode\Py\MobC2Inspector\reports\report_com.cc.mumac2_20260627_114111.md

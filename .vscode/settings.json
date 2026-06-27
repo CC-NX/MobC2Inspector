@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": [
+        "unidbg"
+    ],
+    "java.completion.enabled": false,
+    "java.errors.unresolvedType": false,
+    "java.import.generatesMetadataFilesAtProjectRoot": true,
+    "java.jdt.ls.vmargs": "-Xmx1G"
+}
